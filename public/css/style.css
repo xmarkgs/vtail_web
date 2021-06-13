@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.webinar-sign-up {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 28px;
+  background: -webkit-gradient(linear, left top, right top, from(#4000A6), to(#D800E6));
+  background: linear-gradient(90deg, #4000A6 0%, #D800E6 100%);
+  color: white;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.webinar-sign-up:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+main {
+  width: 100%;
+}
+
+.content-container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.top-section {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: url(../backgrounds/top-section-bg.svg);
+  background-size: cover;
+}
+
+.top-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 92px;
+          column-gap: 92px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  height: 100px;
+  padding: 31px 0 24px 100px;
+  background: url(../backgrounds/header-bg.svg);
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.header__menu a {
+  background: -webkit-gradient(linear, left top, right top, from(#4000A6), to(#D800E6));
+  background: linear-gradient(90deg, #4000A6 0%, #D800E6 100%);
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.webinar-info {
+  margin-top: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 100px;
+}
+
+.webinar-info .webinar-sign-up {
+  margin-top: 70px;
+}
+
+.webinar-info__venue-and-date {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+}
+
+.webinar-info__venue-and-date span {
+  font-weight: 300;
+  color: rgba(0, 40, 136, 0.8);
+}
+
+.webinar-info__venue-and-date p {
+  margin-top: 10px;
+  color: #002888;
+}
+
+.webinar-info__slogan {
+  margin-top: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 555px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  color: #002888;
+  text-transform: uppercase;
+}
+
+.webinar-info__slogan p:nth-child(2) {
+  margin-top: -5px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 11px 21px 12px 15px;
+  -webkit-transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+          transform: matrix(1, -0.06, 0.06, 1, 0, 0);
+  background: url(../backgrounds/v2xrazi-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.webinar-info__slogan p:nth-child(2) img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
+.webinar-info__slogan p:nth-child(3) {
+  margin-top: -8px;
+  z-index: 2;
+}
+
+.webinar-info__slogan p:nth-child(4) {
+  margin-top: 16px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: url(../backgrounds/video-shopping-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 25px 41px 20px 18px;
+}
