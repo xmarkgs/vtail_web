@@ -653,6 +653,9 @@ header {
     width: 100%;
     height: 374px;
     background: url(../backgrounds/opportunity-for-header-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
@@ -1256,7 +1259,7 @@ header {
     height: 17px;
     width: 17px;
     background-color: transparent;
-    border: 1px solid rgba(0, 40, 136, 0.5); 
+    border: 1px solid rgba(0, 40, 136, 0.5);
 }
 
 /* On mouse-over, add a grey background color */
@@ -1317,28 +1320,174 @@ footer {
 /**
  * Simple fade transition,
  */
- .mfp-fade.mfp-bg {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
+.mfp-fade.mfp-bg {
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
+
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: 0.8;
+    opacity: 0.8;
 }
+
 .mfp-fade.mfp-bg.mfp-removing {
-	opacity: 0;
+    opacity: 0;
 }
 
 .mfp-fade.mfp-wrap .mfp-content {
-	opacity: 0;
-	-webkit-transition: all 0.15s ease-out; 
-	-moz-transition: all 0.15s ease-out; 
-	transition: all 0.15s ease-out;
+    opacity: 0;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
 }
+
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-	opacity: 1;
+    opacity: 1;
 }
+
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-	opacity: 0;
+    opacity: 0;
+}
+
+// Media queries
+
+// from 1024px to 1440px
+@media screen and (max-width: 1439px) {
+    .content-container {
+        width: 100%;
+    }
+
+    .webinar-info__slogan {
+        z-index: 1;
+    }
+
+    .top-section__image {
+        transform: scale(.8);
+        position: absolute;
+        top: -40px;
+        right: 500px;
+
+        img:nth-child(2) {
+            display: none;
+        }
+    }
+
+    .for-who-section__top-row__categories__items-container {
+        column-gap: 5px;
+    }
+
+    .for-who-section__bottom-row__items-container div:nth-child(3) {
+        z-index: 1;
+    }
+
+    .you-will-learn-section__items-container {
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 40px;
+        margin-left: 0;
+        z-index: 1;
+
+        .you-will-learn-section__items-container__item:nth-child(2),
+        .you-will-learn-section__items-container__item:nth-child(3),
+        .you-will-learn-section__items-container__item:nth-child(4) {
+            margin-left: 0;
+        }
+    }
+    
+    .who-leads-section__items-container {
+        flex-wrap: wrap;
+
+        .who-leads-section__items-container__item:nth-child(1),
+        .who-leads-section__items-container__item:nth-child(2),
+        .who-leads-section__items-container__item:nth-child(3) {
+            width: 100%;
+            background-size: cover;
+            padding-bottom: 24px;
+
+            h2 {
+                margin-bottom: 32px;
+            }
+
+            .who-leads-section__items-container__item__thesis {
+                margin-left: 72px;
+            }
+        }
+    }
+    
+    .opportunity-for-section-items-container {
+        flex-wrap: wrap;
+    }
+
+    .opportunity-for-section-items-container__videoplayer {
+        order: -1;
+    }
+
+    .opportunity-for-section-items-container__column1 {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 24px;
+        
+        p:nth-child(2) {
+            margin: 0;
+        }
+
+        p:nth-child(3) {
+            margin: 0;
+            margin-left: 25px;
+        }
+    }
+
+    .opportunity-for-section-items-container__column3 {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 24px;
+
+        p:nth-child(2) {
+            margin: 0;
+            margin-left: 25px;
+        }
+
+        p:nth-child(3) {
+            margin: 0;
+            margin-left: 25px;
+        }
+    }
+
+    .how-works-section__explanation__screenshots-container {
+        flex-wrap: wrap;
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot-description {
+        width: 100%;
+        padding-right: 40%;
+        order: -3;
+        margin-left: 106px;
+        margin-bottom: 32px;
+
+        span {
+            display: none;
+        }
+    }
+
+    .how-works-section__explanation__comment {
+        padding-bottom: 50px;
+        height: fit-content;
+        background: $background-light;
+    }
+
+    .form-section-content {
+        padding: 0;
+        align-items: center;
+    }
+
+    #contact-form {
+        align-self: center;
+
+        #contact-form__submit {
+            width: 100%;
+        }
+    }
 }

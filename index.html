@@ -511,9 +511,18 @@
                     Телефон: ${$('#contact-form__phone').val()}
                     E-mail: ${$('#contact-form__email').val()}
                 `
-            }).then(
-                message => alert(message)
-            );
+            }).then(message => {
+                if (message === "OK") {
+                    $('#contact-form__name').val('');
+                    $('#contact-form__phone').val('');
+                    $('#contact-form__email').val('');
+                    $('#contact-form__checkbox').prop('checked', false);
+                    $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
+                    setTimeout(function () {
+                        $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
+                    }, 3000);
+                }
+            });
         });
     </script>
 </body>
