@@ -6,12 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>vtail</title>
+    <!-- Sliders css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
+        <div class="site__menu_mobile">
+            <div class="mobile-cross"></div>
+            <div class="site__menu">
+                <a href="#for-who-section">для кого?</a>
+                <a href="#you-will-learn-section">що буде?</a>
+                <a href="#who-leads-section">спікери</a>
+            </div>
+        </div>
         <section class="top-section">
             <div class="content-container top-section__content">
                 <div class="top-section__image">
@@ -30,6 +40,8 @@
                         <a href="#for-who-section">для кого?</a>
                         <a href="#you-will-learn-section">що буде?</a>
                         <a href="#who-leads-section">спікери</a>
+                    </div>
+                    <div class="mobile-hamburger">
                     </div>
                 </header>
                 <div class="webinar-info">
@@ -65,31 +77,31 @@
                         <div class="for-who-section__top-row__categories__items-container">
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/diamond.png" alt="">
-                                <p>Люкс;</p>
+                                <p>Люкс</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/ring.png" alt="">
-                                <p>Прикраси;</p>
+                                <p>Прикраси</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/ribbon.png" alt="">
-                                <p>Аксесуари;</p>
+                                <p>Аксесуари</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/gamepad.png" alt="">
-                                <p>Електроніка.</p>
+                                <p>Електроніка</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/shirt.png" alt="">
-                                <p>Одяг;</p>
+                                <p>Одяг</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/shoe.png" alt="">
-                                <p>Взуття;</p>
+                                <p>Взуття</p>
                             </div>
                             <div class="for-who-section__top-row__categories__items-container__item">
                                 <img src="icons/furniture.png" alt="">
-                                <p>Фурнітура;</p>
+                                <p>Фурнітура</p>
                             </div>
                         </div>
                     </div>
@@ -116,6 +128,36 @@
                                 клієнтів, що хочуть побачити
                                 товар перед покупкою.
                             </p>
+                        </div>
+                    </div>
+
+                    <div class="for-who-section__bottom-row__items-container_mobile">
+                        <div class="for-who-section__bottom-row__items-container__wrapper companies">
+                            <div class="for-who-section__bottom-row__items-container__item">
+                                <p>
+                                    Компаній, які отримують
+                                    більше, надаючи клієнтам
+                                    екстра-досвід;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="for-who-section__bottom-row__items-container__wrapper offline">
+                            <div class="for-who-section__bottom-row__items-container__item">
+                                <span>
+                                    Offline-магазинів, які
+                                    втрачають покупців через
+                                    фізичної віддаленості;
+                                </span>
+                            </div>
+                        </div>
+                        <div class="for-who-section__bottom-row__items-container__wrapper online">
+                            <div class="for-who-section__bottom-row__items-container__item">
+                                <p>
+                                    Online-магазинів, які втрачають
+                                    клієнтів, що хочуть побачити
+                                    товар перед покупкою.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,6 +201,47 @@
                             <img src="icons/lock.png" alt=""></p>
                     </div>
                 </div>
+                <div class="you-will-learn-section__items-container_mobile">
+                    <div class="you-will-learn-section__items-container__wrapper">
+                        <div class="you-will-learn-section__items-container__item">
+                            <div class="you-will-learn-section__items-container__item__number">
+                                <img src="backgrounds/you-will-learn-item-number-1.svg" alt="">
+                            </div>
+                            <p>Як відбуваються <span>покупки в 1 клік</span>
+                                прямо з відео <img src="icons/sunglasses.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="you-will-learn-section__items-container__wrapper">
+                        <div class="you-will-learn-section__items-container__item">
+                            <div class="you-will-learn-section__items-container__item__number">
+                                <img src="backgrounds/you-will-learn-item-number-2.svg" alt="">
+                            </div>
+                            <p>Як відео - шопінг вже приносить <span>137 мільярдів $</span>
+                                <img src="icons/small-rocket.png" alt="">в рік в Китаї.</p>
+                        </div>
+                    </div>
+                    <div class="you-will-learn-section__items-container__wrapper">
+                        <div class="you-will-learn-section__items-container__item">
+                            <div class="you-will-learn-section__items-container__item__number">
+                                <img src="backgrounds/you-will-learn-item-number-3.svg" alt="">
+                            </div>
+                            <p>Як консультанти магазину допоможуть вам перетворити <span>більше відвідувачів в
+                                    покупців</span>
+                                <img src="icons/money.png" alt=""></p>
+                        </div>
+                    </div>
+                    <div class="you-will-learn-section__items-container__wrapper">
+                        <div class="you-will-learn-section__items-container__item">
+                            <div class="you-will-learn-section__items-container__item__number">
+                                <img src="backgrounds/you-will-learn-item-number-4.svg" alt="">
+                            </div>
+                            <p>Як <span>утримати відвідувача на сайті</span><br>
+                                і захопити його процесом вивчення <br>
+                                і вибору товару в digital-середовищі
+                                <img src="icons/lock.png" alt=""></p>
+                        </div>
+                    </div>
+                </div>
                 <a href="#contact-form" class="webinar-sign-up">
                     записатися на вебінар
                 </a>
@@ -169,6 +252,96 @@
                 <h1 class="who-leads-section__title">
                     хто проводить вебінар?
                 </h1>
+                <div class="who-leads-section__items-container_mobile">
+                    <div class="who-leads-section__items-container__wrapper">
+                        <div class="who-leads-section__items-container__item kostya">
+                            <h2>
+                                Костянтин
+                                Соловйов
+                            </h2>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Власник маркетингового агентства SOLOVIOV AGENCY;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>11 років в маркетингу;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>35000$ інвестицій в свою освіту за останні 2 роки;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>За останні 5 років запустив 8 прибуткових проектів;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Автор Telegram-каналу
+                                    в ТОП-5 маркетингових каналів в Україні.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-leads-section__items-container__wrapper">
+                        <div class="who-leads-section__items-container__item dima">
+                            <h2>
+                                Дмитро Фадєєв
+                            </h2>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Проектний менеджер VTAIL — додаток для відео-шопінгу;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>10 років досвіду роботи
+                                    в фінансах, комерційний сектор;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>3 роки досвіду управління <br>e-commerce проектами в IT;
+                                </p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Реалізував запуск VTAIL
+                                    в Hunkemöller — однієї
+                                    найбільших мереж магазинів білизни в Європі.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who-leads-section__items-container__wrapper">
+                        <div class="who-leads-section__items-container__item alice">
+                            <h2>
+                                Аліса Фурса
+                            </h2>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Digital-стратег;</p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>11 років - досвід роботи
+                                    в рекламі;
+                                </p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>7 років — на позиції стратега;
+                                </p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Розробка рекламних кампаній для понад 70 брендів;
+                                </p>
+                            </div>
+                            <div class="who-leads-section__items-container__item__thesis">
+                                <img src="icons/who-leads-checkmark.svg" alt="">
+                                <p>Лектор Школи блоггера.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="who-leads-section__items-container">
                     <div class="who-leads-section__items-container__item">
                         <h2>
@@ -263,6 +436,23 @@
                         <span>це можливість дня:</span>
                     </div>
                 </div>
+                <div class="opportunity-for-section-items-container_mobile">
+                    <div class="opportunity-for-section-items-container__mobile-thesis">
+                        <p><span>Занурення</span> в процес покупок.</p>
+                        <p><span>Трансляцій</span> разом з блогерами, іншими покупцями, друзями;</p>
+                        <p><span>Управління</span> переглядом товарів.</p>
+                        <p><span>Відвідування</span> магазину в 1 клік прямо з сайту.</p>
+                        <p><span>Персонального досвіду</span> для кожного покупця.</p>
+                        <p><span>Інтерактивних консультацій</span> з будь-якого персонального пристрою.</p>
+                    </div>
+                    <div class="opportunity-for-section-items-container__nike">
+                        <p>як це реалізовано в найк</p>
+                        <div>
+                            <a class="open-player-btn"
+                                href="https://drive.google.com/file/d/1xQXqL14uJju8W8pp8aIGAsleC0pXpZW7/preview"></a>
+                        </div>
+                    </div>
+                </div>
                 <div class="opportunity-for-section-items-container">
                     <div class="opportunity-for-section-items-container__column1">
                         <p><span>Занурення</span> в процес покупок.</p>
@@ -270,7 +460,7 @@
                         <p><span>Управління</span> переглядом товарів.</p>
                     </div>
                     <div class="opportunity-for-section-items-container__videoplayer">
-                        <a class="open-player-btn"
+                        <a class="open-mobile-player-btn"
                             href="https://drive.google.com/file/d/1xQXqL14uJju8W8pp8aIGAsleC0pXpZW7/preview"></a>
                     </div>
                     <div class="opportunity-for-section-items-container__column3">
@@ -284,11 +474,85 @@
                 </a>
             </div>
         </section>
-        <section class="section news-section">
+        <section class="news-section">
             <div class="content-container news-section-content">
                 <h1 class="news-section__title">
                     про це вже пишуть у змі
                 </h1>
+                <div class="news-section__items-container_mobile">
+                    <div class="news-section__items-container__wrapper">
+                        <div class="news-section__items-container__item forbes">
+                            <div class="news-section__items-container__item__logo">
+                                <img src="images/forbes-logo.png" alt="">
+                            </div>
+                            <div class="news-section__items-container__item__date">
+                                Травень 8, 2020
+                            </div>
+                            <div class="news-section__items-container__item__text">
+                                У звіті, оприлюдненому минулого тижня, Forrester підрахував, що роздрібна торгівля в США
+                                може очікувати 9,1%, що становить 321 мільярдів $, втрат у 2020-му році, порівняно з
+                                валовим
+                                обсягом продажів у 2019-му. Роздрібній торгівлі знадобиться приблизно 4 роки, щоб
+                                досягти
+                                рівня «до пандемії». Натомість продажі в електронній комерції зростають. І, швидше за
+                                все,
+                                будуть рости надалі, навіть якщо не загостриться ситуація з вірусом. Це не віщує нічого
+                                хорошого offline-торговим точкам та торгівельним центрам.
+                            </div>
+                            <div class="show-more show-more-forbes">
+                                <p>читати більше</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-section__items-container__wrapper">
+                        <div class="news-section__items-container__item retail">
+                            <div class="news-section__items-container__item__logo">
+                                <img src="images/essentialretail-logo.png" alt="">
+                            </div>
+                            <div class="news-section__items-container__item__date">
+                                Квітень 29, 2020
+                            </div>
+                            <div class="news-section__items-container__item__text">
+                                Про багатоканальні моделі, які підтримують попит під час ковіду. Одна з них - JD
+                                E-Space. Це
+                                50 000 квадратних метрів магазинів у місті Чунцин на південному заході Китаю. JD E-Space
+                                пропонує споживачам спробувати практично все, що є в магазині - від картингів до
+                                пральних
+                                машин. Універсальна модель, за допомогою якої клієнти можуть замовити онлайн з доставкою
+                                додому або забрати річ у магазині. Це дозволяє споживачам за межами району Чунцина
+                                практично
+                                "відвідувати" магазин через відео.
+                            </div>
+                            <div class="show-more show-more-retail">
+                                <p>читати більше</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-section__items-container__wrapper">
+                        <div class="news-section__items-container__item bloomberg">
+                            <div class="news-section__items-container__item__logo">
+                                <img src="images/bloomberg-logo.png" alt="">
+                            </div>
+                            <div class="news-section__items-container__item__date">
+                                Квітень 16, 2020
+                            </div>
+                            <div class="news-section__items-container__item__text">
+                                США повільно адаптувалися до покупок через онлайн-відео, але коронавірус викликав
+                                підвищений
+                                інтерес: "В основному відбувається оцифровка QVC та HSN". За даними Coresight, такий вид
+                                покупок привів до глобальних продажів у 2019 році на 60 мільярдів доларів. А цього року
+                                він
+                                має майже подвоїтися. На США припадає крихітна частка - менше 1 мільярда доларів. Але
+                                після
+                                зльоту в Китаї та інших країнах світу вона швидко зростає в Америці. Особливо ростуть
+                                продажі одягу, косметики і навіть алкоголю.
+                            </div>
+                            <div class="show-more show-more-bloomberg">
+                                <p>читати більше</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="news-section__items-container">
                     <div class="news-section__items-container__item">
                         <div class="news-section__items-container__item__logo">
@@ -364,6 +628,7 @@
                                 покупок.
                             </p>
                             <span>← Приклад того як це працює.</span>
+                            <span class="span-to-hide">Приклад того як це працює ↓</span>
                         </div>
                     </div>
                     <div class="how-works-section__explanation__comment">
@@ -401,8 +666,36 @@
                     знання, отримані<br>
                     на вебінарі, дозволять:
                 </h1>
+                <div class="knowledge-section__benefits_mobile">
+                    <div class="knowledge-section__benefits__wrapper">
+                        <div class="knowledge-section__benefit graph">
+                            <span>Підвищити ефективність</span>
+                            <p>
+                                Розповімо про те, як збільшити рівень конверсії з відвідувань сайту в покупки;
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="knowledge-section__benefits__wrapper">
+                        <div class="knowledge-section__benefit smiley">
+                            <span>Поліпшити клієнт-сервіс</span>
+                            <p>
+                                Поділимося досвідом поліпшення online-сервісу від зарубіжних ритейлерів;
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="knowledge-section__benefits__wrapper">
+                        <div class="knowledge-section__benefit moneybag">
+                            <span>Збільшити продажі</span>
+                            <p>
+                                Розберемо, як демонстрація товарів і персональні консультації допомагають збільшити чеки.
+                            </p>
+                        </div>
+                    </div>
+                </div>
                 <div class="knowledge-section__benefits">
-                    <div class="knowledge-section__benefit">
+                    <div class="knowledge-section__benefit ">
                         <span>Підвищити ефективність</span>
                         <p>
                             Розповімо про те, як збільшити рівень конверсії з відвідувань сайту в покупки;
@@ -429,6 +722,11 @@
                     <p>отримайте інформацію, яка</p>
                     <span>допоможе вам розвивати бізнес!</span>
                 </div>
+                <div class="form-section-content-title_mobile">
+                    <p>отримайте інформацію,</p>
+                    <p>яка допоможе вам</p>
+                    <span>розвивати бізнес!</span>
+                </div>
                 <form action="" id="contact-form">
                     <label>
                         Ім'я
@@ -436,8 +734,7 @@
                     </label>
                     <label>
                         Телефон
-                        <input type="tel" id="contact-form__phone" placeholder="- - -   - - -   - - - -" name="phone"
-                            pattern="[0-9]{3} [0-9]{3} [0-9]{4}" class="contact-form__input" required>
+                        <input type="tel" id="contact-form__phone" name="phone" class="contact-form__input" required>
                     </label>
                     <label>
                         E-mail
@@ -482,8 +779,8 @@
     <script>
         $(document).ready(function () {
             console.log("lol");
-            $('.open-player-btn, .how-works-section_interview-btn').magnificPopup({
-                disableOn: 700,
+            $('.open-player-btn, .how-works-section_interview-btn, .open-mobile-player-btn').magnificPopup({
+                // disableOn: 700,
                 type: 'iframe',
                 mainClass: 'mfp-fade',
                 removalDelay: 160,
@@ -499,28 +796,77 @@
     </script>
 
     <script>
-        $('#contact-form').submit(function (event) {
-            event.preventDefault();
-            Email.send({
-                SecureToken: "fcf80b22-133e-43cd-bf7f-a8f22fc1dd95",
-                To: 'werter.scoo123@gmail.com',
-                From: "mraner123@gmail.com",
-                Subject: "Нова реєстрація на вебінар",
-                Body: `
+        $(document).ready(function () {
+            $('#contact-form').submit(function (event) {
+                event.preventDefault();
+                Email.send({
+                    SecureToken: "fcf80b22-133e-43cd-bf7f-a8f22fc1dd95",
+                    To: 'werter.scoo123@gmail.com',
+                    From: "mraner123@gmail.com",
+                    Subject: "Нова реєстрація на вебінар",
+                    Body: `
                     Ім'я: ${$('#contact-form__name').val()}
                     Телефон: ${$('#contact-form__phone').val()}
                     E-mail: ${$('#contact-form__email').val()}
                 `
-            }).then(message => {
-                if (message === "OK") {
-                    $('#contact-form__name').val('');
-                    $('#contact-form__phone').val('');
-                    $('#contact-form__email').val('');
-                    $('#contact-form__checkbox').prop('checked', false);
-                    $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
-                    setTimeout(function () {
-                        $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
-                    }, 3000);
+                }).then(message => {
+                    if (message === "OK") {
+                        $('#contact-form__name').val('');
+                        $('#contact-form__phone').val('');
+                        $('#contact-form__email').val('');
+                        $('#contact-form__checkbox').prop('checked', false);
+                        $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
+                        setTimeout(function () {
+                            $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
+                        }, 3000);
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Sliders -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.for-who-section__bottom-row__items-container_mobile, .you-will-learn-section__items-container_mobile, .who-leads-section__items-container_mobile, .news-section__items-container_mobile, .knowledge-section__benefits_mobile')
+                .slick({
+                    arrows: false,
+                    dots: true
+                });
+
+            $('.mobile-cross, .mobile-hamburger, .site__menu_mobile .site__menu a').click(function (e) {
+                $('.site__menu_mobile').toggleClass('opened');
+            });
+
+            $('.show-more-forbes').click(function (e) {
+                if ($('.news-section__items-container__item.forbes').hasClass('full-item')) {
+                    $('.news-section__items-container__item.forbes').toggleClass('full-item');
+                    $('.show-more-forbes p').text('ЧИТАТИ БІЛЬШЕ');
+                } else {
+                    $('.news-section__items-container__item.forbes').toggleClass('full-item');
+                    $('.show-more-forbes p').text('ПОКАЗАТИ МЕНШЕ');
+                }
+            });
+
+            $('.show-more-retail').click(function (e) {
+                if ($('.news-section__items-container__item.retail').hasClass('full-item')) {
+                    $('.news-section__items-container__item.retail').toggleClass('full-item');
+                    $('.show-more-retail p').text('ЧИТАТИ БІЛЬШЕ');
+                } else {
+                    $('.news-section__items-container__item.retail').toggleClass('full-item');
+                    $('.show-more-retail p').text('ПОКАЗАТИ МЕНШЕ');
+                }
+            });
+
+            $('.show-more-bloomberg').click(function (e) {
+                if ($('.news-section__items-container__item.bloomberg').hasClass('full-item')) {
+                    $('.news-section__items-container__item.bloomberg').toggleClass('full-item');
+                    $('.show-more-bloomberg p').text('ЧИТАТИ БІЛЬШЕ');
+                } else {
+                    $('.news-section__items-container__item.bloomberg').toggleClass('full-item');
+                    $('.show-more-bloomberg p').text('ПОКАЗАТИ МЕНШЕ');
                 }
             });
         });

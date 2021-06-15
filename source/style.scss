@@ -28,10 +28,42 @@ $text-gray: #2F2F30;
     text-transform: uppercase;
     text-decoration: none;
     transition: .1s;
+    z-index: 10;
 }
 
 .webinar-sign-up:hover {
     transform: scale(1.01);
+}
+
+.mobile-hamburger {
+    display: none;
+    width: 24px;
+    height: 17px;
+    background: url(../icons/hamburger-menu.svg);
+    background-size: cover;
+}
+
+.site__menu_mobile {
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    transition: .3s ease-out;
+    z-index: 5;
+}
+
+.mobile-cross {
+    width: 20px;
+    height: 20px;
+    background: url(../icons/menu-cross.svg);
+    background-size: cover;
+    align-self: flex-end;
 }
 
 // Containers
@@ -1159,6 +1191,7 @@ header {
         background-size: cover;
     }
 
+
     span {
         margin-left: 15px;
         width: fit-content;
@@ -1394,7 +1427,7 @@ footer {
             margin-left: 0;
         }
     }
-    
+
     .who-leads-section__items-container {
         flex-wrap: wrap;
 
@@ -1414,7 +1447,7 @@ footer {
             }
         }
     }
-    
+
     .opportunity-for-section-items-container {
         flex-wrap: wrap;
     }
@@ -1428,7 +1461,7 @@ footer {
         flex-direction: row;
         align-items: flex-start;
         margin-top: 24px;
-        
+
         p:nth-child(2) {
             margin: 0;
         }
@@ -1467,7 +1500,7 @@ footer {
         margin-left: 106px;
         margin-bottom: 32px;
 
-        span {
+        span:not(:last-of-type) {
             display: none;
         }
     }
@@ -1488,6 +1521,858 @@ footer {
 
         #contact-form__submit {
             width: 100%;
+        }
+    }
+}
+
+// Tablet version
+.for-who-section__bottom-row__items-container_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1023px) {
+    .content-container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        background: white;
+    }
+
+    .top-section__image {
+        transform: scale(.4);
+        right: 220px;
+        top: 390px;
+
+        img:nth-child(1) {
+            display: none;
+        }
+
+        img:nth-child(2) {
+            display: block;
+        }
+    }
+
+    .webinar-info {
+        margin-top: 24px;
+    }
+
+    .for-who-section-content:before {
+        display: none;
+    }
+
+    .for-who-section__top-row__screenshot {
+        display: none;
+    }
+
+    .for-who-section__top-row__categories {
+        align-items: center;
+
+        h1 {
+            margin: 0;
+        }
+    }
+
+    .for-who-section__bottom-row__items-container {
+        display: none;
+    }
+
+    .for-who-section__top-row {
+        justify-content: center;
+    }
+
+    .for-who-section__bottom-row {
+        margin-top: 24px;
+    }
+
+    .for-who-section__bottom-row__items-container_mobile {
+        display: block;
+
+        .for-who-section__bottom-row__items-container__wrapper {
+            display: grid;
+            place-items: center;
+            height: 180px;
+        }
+
+        .for-who-section__bottom-row__items-container__wrapper.companies {
+            .for-who-section__bottom-row__items-container__item:before {
+                background: url(../backgrounds/for-who-section-item-before-1.svg);
+                background-size: cover;
+            }
+        }
+
+        .for-who-section__bottom-row__items-container__wrapper.offline {
+            .for-who-section__bottom-row__items-container__item:before {
+                background: url(../backgrounds/for-who-section-item-before-2.svg);
+                background-size: cover;
+            }
+        }
+
+        .for-who-section__bottom-row__items-container__wrapper.online {
+            .for-who-section__bottom-row__items-container__item:before {
+                background: url(../backgrounds/for-who-section-item-before-3.svg);
+                background-size: cover;
+            }
+        }
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        column-gap: 18px;
+        list-style-type: none;
+
+
+        button {
+            width: 12px;
+            height: 12px;
+            border: 0;
+            background: url(../icons/slider-empty.svg);
+            background-size: cover;
+            color: transparent;
+        }
+
+        li.slick-active button {
+            background: url(../icons/slider-filled.svg);
+            background-size: cover;
+        }
+    }
+
+    .you-will-learn-section {
+        height: fit-content;
+
+        .webinar-sign-up {
+            align-self: flex-start;
+            margin-bottom: 48px;
+        }
+    }
+
+    .you-will-learn-section__title {
+        background-size: cover;
+    }
+
+    .you-will-learn-section__items-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news-section__items-container {
+        flex-wrap: wrap;
+    }
+
+    .news-section__items-container__item:not(:nth-child(123)) {
+        width: 100%;
+        transform: unset;
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot-description {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot {
+        width: 30%;
+
+        img {
+            width: 70%;
+        }
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot:nth-child(1) {
+        margin-left: 24px;
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot:nth-child(2),
+    .how-works-section__explanation__screenshots-container__screenshot:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .how-works-section__explanation__comment {
+        padding: 90px 50px 50px 50px;
+    }
+
+    .how-works-section__explanation__comment__text {
+        font-size: 24px;
+    }
+
+    .knowledge-section__benefits {
+        flex-wrap: wrap;
+        padding: 0 32px;
+
+        .knowledge-section__benefit {
+            margin-left: 0;
+
+            &:not(:first-of-type) {
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .form-section-content-title span {
+        width: 620px;
+    }
+}
+
+// Mobile version
+.you-will-learn-section__items-container_mobile {
+    display: none;
+}
+
+.who-leads-section__items-container_mobile {
+    display: none;
+}
+
+.opportunity-for-section-items-container_mobile {
+    display: none;
+}
+
+.news-section__items-container_mobile {
+    display: none;
+}
+
+.span-to-hide {
+    display: none;
+}
+
+.knowledge-section__benefits_mobile {
+    display: none;
+}
+
+.form-section-content-title_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        justify-content: space-between;
+        height: 70px;
+        padding: 25px 20px 10px 20px;
+
+        .site__menu {
+            display: none;
+        }
+
+        .mobile-hamburger {
+            display: block;
+        }
+    }
+
+    .site__menu_mobile {
+        touch-action: none;
+
+        .site__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 24px;
+            font-size: 24px;
+            margin-top: 155px;
+
+            a {
+                font-weight: 600;
+            }
+        }
+
+        &.opened {
+            top: 0;
+        }
+    }
+
+    .top-section {
+        height: fit-content;
+    }
+
+    .webinar-info__venue-and-date {
+        display: none;
+    }
+
+    .webinar-info__slogan {
+        width: fit-content;
+        font-size: 20px;
+
+        img {
+            transform: scale(.8);
+        }
+
+        p:nth-child(2) {
+            padding: 15px 15px 13px 18px;
+            align-self: flex-start;
+            margin-left: 120px;
+        }
+
+
+        p:nth-child(4) {
+            padding: 13px 12px 11px 9px;
+        }
+    }
+
+    .webinar-info {
+        align-items: center;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .webinar-sign-up {
+        width: 300px;
+        padding: 27px 22px;
+        font-size: 18px;
+    }
+
+    .top-section__image {
+        top: 200px;
+        right: 100px;
+        transform: scale(.2);
+    }
+
+    .for-who-section {
+        margin-top: 50px;
+    }
+
+    .for-who-section__top-row {
+        width: 100%;
+    }
+
+    .for-who-section-content {
+        padding: 0 10px;
+    }
+
+    .for-who-section__top-row__categories {
+        align-items: center;
+
+        h1 {
+            font-size: 20px;
+            padding: 24px 21px 20px 22px;
+        }
+
+        span {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    .for-who-section__top-row__categories__items-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 10px;
+
+        .for-who-section__top-row__categories__items-container__item {
+            column-gap: 4px;
+        }
+
+        div:nth-child(1) {
+            order: -2;
+        }
+
+        div:nth-child(5) {
+            order: -5;
+        }
+
+        div:nth-child(6) {
+            order: -1;
+        }
+    }
+
+    .for-who-section__bottom-row__items-container__wrapper {
+        transform: scale(.8);
+    }
+
+    .you-will-learn-section__items-container {
+        display: none;
+    }
+
+    .you-will-learn-section__items-container_mobile {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .you-will-learn-section__items-container__wrapper {
+            min-height: 120px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    .you-will-learn-section-content {
+        padding: 0 10px;
+
+        .you-will-learn-section__title {
+            font-size: 20px;
+            padding: 14px 14px 10px 12px;
+            align-self: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .webinar-sign-up {
+            align-self: center;
+            margin-bottom: 0;
+        }
+    }
+
+    .you-will-learn-section__items-container__item p {
+        width: auto;
+    }
+
+    .you-will-learn-section__items-container__item:not(:nth-child(343)) {
+        width: auto;
+    }
+
+    .you-will-learn-section-content:before {
+        top: 220px;
+        left: -180px;
+        transforM: scale(.5);
+    }
+
+    .who-leads-section {
+        margin-top: 50px;
+    }
+
+    .who-leads-section-content {
+        padding: 0 10px;
+    }
+
+    .who-leads-section__title {
+        font-size: 20px;
+        padding: 22px 16px 12px 16px;
+        text-align: center;
+        width: 219px;
+    }
+
+    .who-leads-section__items-container__item:before {
+        width: 78px;
+        height: 78px;
+        top: -10px;
+        left: -10px;
+    }
+
+    .who-leads-section__items-container__wrapper {
+        display: grid;
+        place-items: center;
+    }
+
+    .who-leads-section__items-container__item:not(:nth-child(123)) {
+        margin-left: 0;
+        padding: 20px 5px 0 0;
+        width: 100%;
+        background-size: cover;
+        transform: scale(.9);
+
+        .who-leads-section__items-container__item__thesis:not(:nth-child(123)) {
+            margin-left: 0;
+            column-gap: 2px;
+            margin-left: -15px;
+
+            img {
+                transform: scale(.5);
+            }
+        }
+    }
+
+    .who-leads-section__items-container {
+        display: none;
+    }
+
+    .who-leads-section__items-container_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .who-leads-section__items-container__item.kostya:before {
+        background: url(../images/who-leads-1.png);
+        background-size: cover;
+    }
+
+    .who-leads-section__items-container__item.dima:before {
+        background: url(../images/who-leads-2.png);
+        background-size: cover;
+    }
+
+    .who-leads-section__items-container__item.alice:before {
+        background: url(../images/who-leads-3.png);
+        background-size: cover;
+    }
+
+    .opportunity-for-section-items-container {
+        display: none;
+    }
+
+    .opportunity-for-section-items-container_mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opportunity-for-section {
+        margin-top: 50px;
+    }
+
+    .opportunity-for-section-content {
+        padding: 0 10px;
+    }
+
+    .opportunity-for-section__header {
+        background: transparent;
+        font-size: 20px;
+        height: fit-content;
+
+        p {
+            color: $dark-blue;
+        }
+
+        span {
+            margin: 0;
+            padding: 12px 15px 15px 14px;
+        }
+    }
+
+    .opportunity-for-section-items-container__mobile-thesis {
+        margin-top: 24px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 18px;
+        row-gap: 32px;
+        padding-right: 20px;
+
+        p {
+            display: block;
+            width: fit-content;
+            font-weight: 300;
+            color: #2F2F30;
+        }
+
+        p:nth-child(2),
+        p:nth-child(5) {
+            margin-left: 60px;
+        }
+
+        p:nth-child(3),
+        p:nth-child(4) {
+            margin-left: 77px;
+        }
+
+        span {
+            font-weight: normal;
+            color: $dark-blue;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: -55px;
+            left: -10px;
+            display: block;
+            width: 187px;
+            height: 506px;
+            background: url(../backgrounds/opportunity-items-mobile-before.svg);
+            background-size: cover;
+        }
+    }
+
+    .opportunity-for-section-items-container__nike {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+
+        p {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $dark-blue;
+        }
+
+        div {
+            position: relative;
+            display: grid;
+            place-items: center;
+            width: 100%;
+            height: 316px;
+            background: url(../images/nike-guy-mobile.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 20px;
+                right: -10px;
+                width: 89px;
+                height: 164px;
+                background: url(../backgrounds/nike-guy-before-mobile.svg);
+                background-size: cover;
+            }
+        }
+    }
+
+    .news-section__title {
+        padding: 22px 12px 12px 12px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .news-section {
+        margin-top: 50px;
+    }
+
+    .news-section-content {
+        padding: 0 10px;
+    }
+
+    .news-section__items-container {
+        display: none;
+    }
+
+    .news-section__items-container_mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+        row-gap: 24px;
+    }
+
+    // .news-section__items-container__wrapper {
+    //     width: px;
+    // }
+
+    .news-section__items-container__item:not(:nth-child(123)) {
+        position: relative;
+        padding-left: 10px;
+        padding-right: 5px;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        transition: .1s;
+
+        &.full-item {
+            height: fit-content;
+            padding-bottom: 48px;
+
+            .show-more {
+                box-shadow: unset;
+            }
+        }
+    }
+
+    .show-more {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 48px;
+        background: $background-light;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0px -7px 20px 20px rgba(242, 244, 255, 0.7);
+
+        p {
+            background: $main-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    // .news-section__items-container__item.retail {
+    //     padding-left: 10px;
+    //     padding-right: 5px;
+    // }
+
+    // .news-section__items-container__item.bloomberg {
+    //     padding-left: 10px;
+    //     padding-right: 5px;
+    // }
+
+    .how-works-section {
+        margin-top: 50px;
+    }
+
+    .how-works-section-title {
+        font-size: 20px;
+        padding: 19px 10px 19px 11px;
+    }
+
+    .how-works-section-content {
+        padding: 0 10px;
+    }
+
+    .span-to-hide {
+        display: block;
+    }
+
+    .how-works-section__explanation {
+        margin-top: 20px;
+    }
+
+    .how-works-section__explanation__comment {
+        padding: 90px 10px 70px 10px;
+
+        .how-works-section__explanation__comment__text {
+            font-size: 20px;
+            line-height: 27px;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .how-works-section_interview-btn {
+        padding: 27px 22px;
+        font-size: 18px;
+        margin-top: -60px;
+    }
+
+    .how-works-section__explanation__comment__author p {
+        font-size: 15px;
+    }
+
+    .knowledge-section {
+        margin-top: 50px;
+    }
+
+    .knowledge-section-content {
+        padding: 0 10px;
+    }
+
+    .knowledge-section__title {
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        padding: 10px 5px;
+        background: url(../backgrounds/how-works-title-bg.svg);
+        background-size: cover;
+    }
+
+    .knowledge-section__benefits_mobile {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 48px;
+        row-gap: 24px;
+    }
+
+    .knowledge-section__benefits {
+        display: none;
+    }
+
+    .knowledge-section__benefit:before {
+        transform: scale(.7);
+    }
+
+    .knowledge-section__benefits_mobile .knowledge-section__benefit:not(:first-of-type) {
+        margin-top: 0;
+    }
+
+    .knowledge-section__benefits__wrapper {
+        display: grid;
+        place-items: center;
+        padding-top: 40px;
+    }
+
+    .knowledge-section__benefits_mobile .knowledge-section__benefit {
+        margin-left: 65px;
+    }
+
+    .knowledge-section__benefit.graph {
+
+        &:before {
+            background: url(../backgrounds/knowledge-item-graph.png);
+            background-size: cover;
+        }
+
+    }
+
+    .knowledge-section__benefit.smiley {
+
+        &:before {
+            background: url(../backgrounds/knowledge-item-smiley.png);
+            background-size: cover;
+        }
+    }
+
+    .knowledge-section__benefit.moneybag {
+
+        &:before {
+            background: url(../backgrounds/knowledge-item-moneybag.png);
+            background-size: cover;
+        }
+    }
+
+    .form-section {
+        padding: 0 10px;
+    }
+
+    .form-section-content-title span {
+        width: fit-content;
+    }
+
+    .form-section-content-title {
+        display: none;
+    }
+
+    .form-section-content-title_mobile {
+        display: flex;
+        flex-direction: column;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $dark-blue;
+
+        p {
+            width: fit-content;
+            padding: 20px 24px 16px 24px;
+            background: url(../backgrounds/form-section-title-bg-1.svg);
+            background-size: cover;
+        }
+
+        p:nth-child(2) {
+            background: url(../backgrounds/news-section-title-bg.svg);
+            background-size: cover;
+        }
+
+
+        span {
+            margin-left: 45px;
+            width: fit-content;
+            padding: 11px 17px 18px 16px;
+            background: url(../backgrounds/form-section-title-bg-2.svg);
+            background-size: cover;
+            transform: rotate(-2.72deg);
+        }
+    }
+
+    #contact-form {
+        width: 100%;
+    }
+
+    .contact-form__input {
+        width: 100%;
+    }
+
+    footer {
+
+        .site__menu {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
         }
     }
 }
