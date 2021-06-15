@@ -499,17 +499,22 @@
     </script>
 
     <script>
-        Email.send({
-            Host: "smtp-relay.sendinblue.com",
-            Username: "mraner123@gmail.com",
-            Password: "4GYt69VdFxfS8P3y",
-            To: 'them@website.com',
-            From: "you@isp.com",
-            Subject: "This is the subject",
-            Body: "And this is the body"
-        }).then(
-            message => alert(message)
-        );
+        $('#contact-form').submit(function (event) {
+            event.preventDefault();
+            Email.send({
+                SecureToken: "fcf80b22-133e-43cd-bf7f-a8f22fc1dd95",
+                To: 'werter.scoo123@gmail.com',
+                From: "mraner123@gmail.com",
+                Subject: "Нова реєстрація на вебінар",
+                Body: `
+                    Ім'я: ${$('#contact-form__name').val()}
+                    Телефон: ${$('#contact-form__phone').val()}
+                    E-mail: ${$('#contact-form__email').val()}
+                `
+            }).then(
+                message => alert(message)
+            );
+        });
     </script>
 </body>
 
