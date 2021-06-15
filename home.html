@@ -500,13 +500,15 @@
 
     <script>
         Email.send({
-            SecureToken: "4GYt69VdFxfS8P3y",
-            To: 'mraner123@gmail.com',
-            From: "werter.scoo123@gmail.com",
+            Host: "smtp-relay.sendinblue.com",
+            Username: "mraner123@gmail.com",
+            Password: "4GYt69VdFxfS8P3y",
+            To: 'them@website.com',
+            From: "you@isp.com",
             Subject: "This is the subject",
             Body: "And this is the body"
         }).then(
-            message => console.log(message)
+            message => alert(message)
         );
     </script>
 </body>
