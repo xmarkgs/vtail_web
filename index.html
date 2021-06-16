@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/svg" href="icons/favicon.svg" />
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                 </header>
                 <div class="webinar-info">
                     <div class="webinar-info__venue-and-date">
-                        <span>20 мая 2021 року 19:00 Київ</span>
+                        <span>20 червня 2021 року 19:00 Київ</span>
                         <p>Безкоштовний вебінар</p>
                     </div>
                     <div class="webinar-info__slogan">
@@ -460,7 +462,7 @@
                         <p><span>Управління</span> переглядом товарів.</p>
                     </div>
                     <div class="opportunity-for-section-items-container__videoplayer">
-                        <a class="open-mobile-player-btn"
+                        <a class="open-player-btn"
                             href="https://drive.google.com/file/d/1xQXqL14uJju8W8pp8aIGAsleC0pXpZW7/preview"></a>
                     </div>
                     <div class="opportunity-for-section-items-container__column3">
@@ -779,7 +781,7 @@
     <script>
         $(document).ready(function () {
             console.log("lol");
-            $('.open-player-btn, .how-works-section_interview-btn, .open-mobile-player-btn').magnificPopup({
+            $('.open-player-btn, .how-works-section_interview-btn').magnificPopup({
                 // disableOn: 700,
                 type: 'iframe',
                 mainClass: 'mfp-fade',
@@ -816,6 +818,7 @@
                         $('#contact-form__email').val('');
                         $('#contact-form__checkbox').prop('checked', false);
                         $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
+                        window.location = "/reg-success.html";
                         setTimeout(function () {
                             $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
                         }, 3000);

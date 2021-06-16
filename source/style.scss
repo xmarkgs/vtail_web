@@ -2037,6 +2037,7 @@ footer {
         font-style: normal;
         font-size: 18px;
         row-gap: 32px;
+        padding-left: 10px;
         padding-right: 20px;
 
         p {
@@ -2220,7 +2221,7 @@ footer {
     }
 
     .how-works-section__explanation__comment {
-        padding: 90px 10px 70px 10px;
+        padding: 90px 10px 90px 10px;
 
         .how-works-section__explanation__comment__text {
             font-size: 20px;
@@ -2235,7 +2236,7 @@ footer {
     .how-works-section_interview-btn {
         padding: 27px 22px;
         font-size: 18px;
-        margin-top: -60px;
+        margin-top: -80px;
     }
 
     .how-works-section__explanation__comment__author p {
@@ -2374,5 +2375,126 @@ footer {
             align-items: center;
             row-gap: 10px;
         }
+    }
+}
+
+
+// Registration success
+
+.reg-success-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 140px 24px 120px 24px;
+    background: url(../backgrounds/reg-success-bg.png);
+    background-size: cover;
+}
+
+.reg-success-section__title {
+    width: fit-content;
+    padding: 46px 60px;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    color: $dark-blue;
+    text-transform: uppercase;
+    font-size: 35px;
+    line-height: 42px;
+    background: url(../backgrounds/reg-sucess__title-bg.svg);
+    background-size: cover;
+}
+
+.reg-success-section__subtitle {
+    margin-top: 60px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 725px;
+    color: $text-gray;
+    text-align: center;
+}
+
+.reg-success-section__messengers-container {
+    margin-top: 85px;
+    display: flex;
+    column-gap: 61px;
+}
+
+.messenger-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    width: 284px;
+    padding: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &.telegram {
+        background: #47B1E5;
+    }
+
+    &.viber {
+        background: #7F50A0;
+    }
+}
+
+.back-home-section {
+    margin-top: 40px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 10px 10px 32px 10px;
+
+    a {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: $main-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@media screen and (max-width: 840px) {
+
+    .reg-success-section {
+        padding: 65px 18px 0 18px;
+    }
+
+    .reg-success-section__title {
+        padding: 23px 18px 23px 19px;
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .reg-success-section__subtitle {
+        margin-top: 30px;
+    }
+
+    .reg-success-section__messengers-container {
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .messenger-btn {
+        width: 100%;
+        max-width: 284px;
     }
 }

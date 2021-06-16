@@ -2300,6 +2300,7 @@ footer .site__menu {
     font-style: normal;
     font-size: 18px;
     row-gap: 32px;
+    padding-left: 10px;
     padding-right: 20px;
   }
   .opportunity-for-section-items-container__mobile-thesis p {
@@ -2466,7 +2467,7 @@ footer .site__menu {
     margin-top: 20px;
   }
   .how-works-section__explanation__comment {
-    padding: 90px 10px 70px 10px;
+    padding: 90px 10px 90px 10px;
   }
   .how-works-section__explanation__comment .how-works-section__explanation__comment__text {
     font-size: 20px;
@@ -2478,7 +2479,7 @@ footer .site__menu {
   .how-works-section_interview-btn {
     padding: 27px 22px;
     font-size: 18px;
-    margin-top: -60px;
+    margin-top: -80px;
   }
   .how-works-section__explanation__comment__author p {
     font-size: 15px;
@@ -2604,5 +2605,146 @@ footer .site__menu {
         -ms-flex-align: center;
             align-items: center;
     row-gap: 10px;
+  }
+}
+
+.reg-success-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 140px 24px 120px 24px;
+  background: url(../backgrounds/reg-success-bg.png);
+  background-size: cover;
+}
+
+.reg-success-section__title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 46px 60px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #002888;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 42px;
+  background: url(../backgrounds/reg-sucess__title-bg.svg);
+  background-size: cover;
+}
+
+.reg-success-section__subtitle {
+  margin-top: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 725px;
+  color: #2F2F30;
+  text-align: center;
+}
+
+.reg-success-section__messengers-container {
+  margin-top: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 61px;
+          column-gap: 61px;
+}
+
+.messenger-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  width: 284px;
+  padding: 22px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.messenger-btn.telegram {
+  background: #47B1E5;
+}
+
+.messenger-btn.viber {
+  background: #7F50A0;
+}
+
+.back-home-section {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 10px 10px 32px 10px;
+}
+
+.back-home-section a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left top, right top, from(#4000A6), to(#D800E6));
+  background: linear-gradient(90deg, #4000A6 0%, #D800E6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 840px) {
+  .reg-success-section {
+    padding: 65px 18px 0 18px;
+  }
+  .reg-success-section__title {
+    padding: 23px 18px 23px 19px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .reg-success-section__subtitle {
+    margin-top: 30px;
+  }
+  .reg-success-section__messengers-container {
+    width: 100%;
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 20px;
+  }
+  .messenger-btn {
+    width: 100%;
+    max-width: 284px;
   }
 }
