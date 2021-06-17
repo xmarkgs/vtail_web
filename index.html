@@ -768,11 +768,13 @@
     <!-- Form Mask -->
     <script src="https://unpkg.com/imask"></script>
     <script>
-        var input = document.getElementById('contact-form__phone');
-        var maskOptions = {
-            mask: '+{38} (000)-000-00-00'
-        };
-        var mask = IMask(input, maskOptions);
+        document.addEventListener('DOMContentLoaded', function () {
+            var input = document.getElementById('contact-form__phone');
+            var maskOptions = {
+                mask: '+{38} (000)-000-00-00'
+            };
+            var mask = IMask(input, maskOptions);
+        });
     </script>
 
     <!-- Magnific Popup core CSS file -->
