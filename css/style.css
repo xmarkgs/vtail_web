@@ -1156,6 +1156,10 @@ header {
   margin-left: 56px;
 }
 
+.how-works-section__explanation__screenshots-container__screenshot img {
+  border-radius: 23px;
+}
+
 .how-works-section__explanation__screenshots-container__screenshot-description {
   padding-top: 30px;
   margin-left: 49px;
@@ -1940,6 +1944,7 @@ footer .site__menu {
   }
   .how-works-section__explanation__screenshots-container__screenshot img {
     width: 70%;
+    border-radius: 20px;
   }
   .how-works-section__explanation__screenshots-container__screenshot:nth-child(1) {
     margin-left: 24px;
@@ -2011,6 +2016,9 @@ footer .site__menu {
   }
   header .mobile-hamburger {
     display: block;
+  }
+  .how-works-section__explanation__screenshots-container__screenshot img {
+    border-radius: 12px;
   }
   .site__menu_mobile {
     -ms-touch-action: none;

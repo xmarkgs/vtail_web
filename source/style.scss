@@ -949,6 +949,10 @@ header {
 
 .how-works-section__explanation__screenshots-container__screenshot {
     margin-left: 56px;
+
+    img {
+        border-radius: 23px;
+    }
 }
 
 .how-works-section__explanation__screenshots-container__screenshot-description {
@@ -1676,6 +1680,7 @@ footer {
 
         img {
             width: 70%;
+            border-radius: 20px;
         }
     }
 
@@ -1755,6 +1760,13 @@ footer {
 
         .mobile-hamburger {
             display: block;
+        }
+    }
+
+    .how-works-section__explanation__screenshots-container__screenshot {
+
+        img {
+            border-radius: 12px;
         }
     }
 

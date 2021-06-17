@@ -615,13 +615,13 @@
                 <div class="how-works-section__explanation">
                     <div class="how-works-section__explanation__screenshots-container">
                         <div class="how-works-section__explanation__screenshots-container__screenshot">
-                            <img src="images/how-works-screenshot-1.png" alt="">
+                            <img src="gifs/Mask Group1.gif" alt="">
                         </div>
                         <div class="how-works-section__explanation__screenshots-container__screenshot">
-                            <img src="images/how-works-screenshot-2.png" alt="">
+                            <img src="gifs/Mask Group2.gif" alt="">
                         </div>
                         <div class="how-works-section__explanation__screenshots-container__screenshot">
-                            <img src="images/how-works-screenshot-3.png" alt="">
+                            <img src="gifs/Mask Group3.gif" alt="">
                         </div>
                         <div class="how-works-section__explanation__screenshots-container__screenshot-description">
                             <p>
@@ -677,7 +677,7 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="knowledge-section__benefits__wrapper">
                         <div class="knowledge-section__benefit smiley">
                             <span>Поліпшити клієнт-сервіс</span>
@@ -686,12 +686,13 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="knowledge-section__benefits__wrapper">
                         <div class="knowledge-section__benefit moneybag">
                             <span>Збільшити продажі</span>
                             <p>
-                                Розберемо, як демонстрація товарів і персональні консультації допомагають збільшити чеки.
+                                Розберемо, як демонстрація товарів і персональні консультації допомагають збільшити
+                                чеки.
                             </p>
                         </div>
                     </div>
@@ -764,6 +765,16 @@
         </footer>
     </main>
 
+    <!-- Form Mask -->
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var input = document.getElementById('contact-form__phone');
+        var maskOptions = {
+            mask: '+{38} (000)-000-00-00'
+        };
+        var mask = IMask(input, maskOptions);
+    </script>
+
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css"
         integrity="sha512-nIm/JGUwrzblLex/meoxJSPdAKQOe2bLhnrZ81g5Jbh519z8GFJIWu87WAhBH+RAyGbM4+U3S2h+kL5JoV6/wA=="
@@ -818,7 +829,7 @@
                         $('#contact-form__email').val('');
                         $('#contact-form__checkbox').prop('checked', false);
                         $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
-                        window.location = "/reg-success.html";
+                        window.location = "https://xmarkgs.github.io/vtail/reg-success.html";
                         setTimeout(function () {
                             $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
                         }, 3000);
