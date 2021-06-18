@@ -59,7 +59,7 @@
   background: white;
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out;
-  z-index: 5;
+  z-index: 100;
 }
 
 .mobile-cross {
@@ -2725,6 +2725,12 @@ footer .site__menu {
   background: linear-gradient(90deg, #4000A6 0%, #D800E6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1440px) {
+  .reg-success-section {
+    padding: 70px 24px 120px 24px;
+  }
 }
 
 @media screen and (max-width: 840px) {

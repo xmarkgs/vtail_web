@@ -793,7 +793,6 @@
 
     <script>
         $(document).ready(function () {
-            console.log("lol");
             $('.open-player-btn, .how-works-section_interview-btn').magnificPopup({
                 // disableOn: 700,
                 type: 'iframe',
@@ -816,7 +815,7 @@
                 event.preventDefault();
                 Email.send({
                     SecureToken: "fcf80b22-133e-43cd-bf7f-a8f22fc1dd95",
-                    To: 'werter.scoo123@gmail.com',
+                    To: 'vtail.ua.lead@gmail.com',
                     From: "mraner123@gmail.com",
                     Subject: "Нова реєстрація на вебінар",
                     Body: `
@@ -831,7 +830,7 @@
                         $('#contact-form__email').val('');
                         $('#contact-form__checkbox').prop('checked', false);
                         $('#contact-form__submit').val('ФОРМУ ВІДПРАВЛЕНО');
-                        window.location = "https://xmarkgs.github.io/vtail/reg-success.html";
+                        window.location = "/reg-success.html";
                         setTimeout(function () {
                             $('#contact-form__submit').val('ЗАПИСАТИСЯ НА ВЕБІНАР');
                         }, 3000);
@@ -841,7 +840,7 @@
         });
     </script>
 
-    <!-- Sliders -->
+    <!-- Sliders, Mobile menu, Read more -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script>
@@ -852,9 +851,13 @@
                     dots: true
                 });
 
+            // Mobile menu
+
             $('.mobile-cross, .mobile-hamburger, .site__menu_mobile .site__menu a').click(function (e) {
                 $('.site__menu_mobile').toggleClass('opened');
             });
+
+            // Read more
 
             $('.show-more-forbes').click(function (e) {
                 if ($('.news-section__items-container__item.forbes').hasClass('full-item')) {
