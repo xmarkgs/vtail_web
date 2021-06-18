@@ -1281,10 +1281,12 @@ header {
 /* Hide the browser's default checkbox */
 .checkbox-wrap input {
     position: absolute;
+    top: 2px;
+    left: 0;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
+    height: 17px;
+    width: 17px;
 }
 
 /* Create a custom checkbox */
