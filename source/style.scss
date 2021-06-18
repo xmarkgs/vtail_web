@@ -2434,6 +2434,8 @@ footer {
 .reg-success-section__messengers-container {
     margin-top: 85px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 61px;
 }
 
@@ -2487,7 +2489,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1440px) {
 
     .reg-success-section {
         padding: 65px 18px 0 18px;
@@ -2506,8 +2508,6 @@ footer {
     .reg-success-section__messengers-container {
         width: 100%;
         margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
         row-gap: 20px;
     }
 
