@@ -195,7 +195,7 @@ header {
           align-items: center;
   width: 700px;
   height: 100px;
-  padding: 31px 0 24px 100px;
+  padding: 0 0 24px 100px;
   background: url(../backgrounds/header-bg.svg);
 }
 
@@ -1374,6 +1374,7 @@ header {
 .knowledge-section__benefit span {
   font-weight: normal;
   color: #002888;
+  margin-bottom: 4px;
 }
 
 .knowledge-section__benefit p {
@@ -1695,8 +1696,8 @@ footer .site__menu {
     display: none;
   }
   .for-who-section__top-row__categories__items-container {
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
+    -webkit-column-gap: 16px;
+            column-gap: 16px;
   }
   .for-who-section__bottom-row__items-container div:nth-child(3) {
     z-index: 1;
@@ -1757,6 +1758,10 @@ footer .site__menu {
             align-items: flex-start;
     margin-top: 24px;
   }
+  .opportunity-for-section-items-container__column1 p {
+    width: 30% !important;
+    text-align: center;
+  }
   .opportunity-for-section-items-container__column1 p:nth-child(2) {
     margin: 0;
   }
@@ -1774,6 +1779,10 @@ footer .site__menu {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 24px;
+  }
+  .opportunity-for-section-items-container__column3 p {
+    width: 30% !important;
+    text-align: center;
   }
   .opportunity-for-section-items-container__column3 p:nth-child(2) {
     margin: 0;
@@ -2620,6 +2629,9 @@ footer .site__menu {
   .contact-form__input {
     width: 100%;
   }
+  footer {
+    padding-bottom: 24px;
+  }
   footer .site__menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2628,7 +2640,7 @@ footer .site__menu {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    row-gap: 10px;
+    row-gap: 24px;
   }
 }
 

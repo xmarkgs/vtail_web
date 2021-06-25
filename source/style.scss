@@ -155,7 +155,7 @@ header {
     align-items: center;
     width: 700px;
     height: 100px;
-    padding: 31px 0 24px 100px;
+    padding: 0 0 24px 100px;
     background: url(../backgrounds/header-bg.svg);
 }
 
@@ -1131,6 +1131,7 @@ header {
     span {
         font-weight: normal;
         color: $dark-blue;
+        margin-bottom: 4px;
     }
 
     p {
@@ -1425,7 +1426,7 @@ footer {
     }
 
     .for-who-section__top-row__categories__items-container {
-        column-gap: 5px;
+        column-gap: 16px;
     }
 
     .for-who-section__bottom-row__items-container div:nth-child(3) {
@@ -1480,6 +1481,11 @@ footer {
         align-items: flex-start;
         margin-top: 24px;
 
+        p {
+            width: 30% !important;
+            text-align: center;
+        }
+
         p:nth-child(2) {
             margin: 0;
         }
@@ -1495,6 +1501,11 @@ footer {
         flex-direction: row;
         align-items: flex-start;
         margin-top: 24px;
+
+        p {
+            width: 30% !important;
+            text-align: center;
+        }
 
         p:nth-child(2) {
             margin: 0;
@@ -2401,11 +2412,12 @@ footer {
     }
 
     footer {
+        padding-bottom: 24px;
 
         .site__menu {
             flex-direction: column;
             align-items: center;
-            row-gap: 10px;
+            row-gap: 24px;
         }
     }
 }
