@@ -926,8 +926,20 @@ header {
   place-items: center;
   width: 558px;
   height: 506px;
-  background: url(../backgrounds/opportunity-for-player-bg.png);
+  background: url(../videos/background-section.png);
   background-size: cover;
+}
+
+.video-wrap {
+  padding: 48px;
+  background: url(../videos/mockup.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+}
+
+.video-wrap video {
+  width: 150px;
 }
 
 .open-player-btn {
@@ -2373,7 +2385,6 @@ footer .site__menu {
     place-items: center;
     width: 100%;
     height: 316px;
-    background: url(../images/nike-guy-mobile.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -2387,6 +2398,9 @@ footer .site__menu {
     height: 164px;
     background: url(../backgrounds/nike-guy-before-mobile.svg);
     background-size: cover;
+  }
+  .video-wrap video {
+    width: 120px;
   }
   .news-section__title {
     padding: 22px 12px 12px 12px;
