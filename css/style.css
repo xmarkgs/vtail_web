@@ -1854,6 +1854,7 @@ footer .site__menu {
   header {
     width: 100%;
     background: white;
+    padding-top: 24px;
   }
   .top-section__image {
     -webkit-transform: scale(0.4);
