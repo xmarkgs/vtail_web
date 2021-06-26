@@ -1973,6 +1973,10 @@ footer {
 
     .you-will-learn-section__items-container__item p {
         width: auto;
+
+        img {
+            display: inline-block;
+        }
     }
 
     .you-will-learn-section__items-container__item:not(:nth-child(343)) {
@@ -2286,7 +2290,7 @@ footer {
     }
 
     .how-works-section__explanation__comment {
-        padding: 90px 10px 90px 10px;
+        padding: 90px 16px 90px 16px;
 
         .how-works-section__explanation__comment__text {
             font-size: 20px;

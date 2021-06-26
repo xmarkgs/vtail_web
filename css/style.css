@@ -2224,6 +2224,9 @@ footer .site__menu {
   .you-will-learn-section__items-container__item p {
     width: auto;
   }
+  .you-will-learn-section__items-container__item p img {
+    display: inline-block;
+  }
   .you-will-learn-section__items-container__item:not(:nth-child(343)) {
     width: auto;
   }
@@ -2513,7 +2516,7 @@ footer .site__menu {
     margin-top: 20px;
   }
   .how-works-section__explanation__comment {
-    padding: 90px 10px 90px 10px;
+    padding: 90px 16px 90px 16px;
   }
   .how-works-section__explanation__comment .how-works-section__explanation__comment__text {
     font-size: 20px;
