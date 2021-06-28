@@ -926,7 +926,7 @@ header {
   place-items: center;
   width: 558px;
   height: 506px;
-  background: url(../videos/background-section.png);
+  background: url(../backgrounds/video-section-background.png);
   background-size: cover;
 }
 
@@ -1295,6 +1295,7 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-transition: .1s;
   transition: .1s;
+  z-index: 10;
 }
 
 .how-works-section_interview-btn div {

@@ -766,7 +766,7 @@ header {
     place-items: center;
     width: 558px;
     height: 506px;
-    background: url(../videos/background-section.png);
+    background: url(../backgrounds/video-section-background.png);
     background-size: cover;
 }
 
@@ -1066,6 +1066,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: .1s;
+    z-index: 10;
 
     div {
         position: absolute;
