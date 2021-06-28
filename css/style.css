@@ -930,18 +930,6 @@ header {
   background-size: cover;
 }
 
-.video-wrap {
-  padding: 48px;
-  background: url(../videos/mockup.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-}
-
-.video-wrap video {
-  width: 150px;
-}
-
 .open-player-btn {
   width: 85px;
   height: 85px;
@@ -2381,52 +2369,6 @@ footer .site__menu {
     height: 506px;
     background: url(../backgrounds/opportunity-items-mobile-before.svg);
     background-size: cover;
-  }
-  .opportunity-for-section-items-container__nike {
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    row-gap: 20px;
-  }
-  .opportunity-for-section-items-container__nike p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #002888;
-  }
-  .opportunity-for-section-items-container__nike div {
-    position: relative;
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 316px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .opportunity-for-section-items-container__nike div:before {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    right: -10px;
-    width: 89px;
-    height: 164px;
-    background: url(../backgrounds/nike-guy-before-mobile.svg);
-    background-size: cover;
-  }
-  .video-wrap video {
-    width: 120px;
   }
   .news-section__title {
     padding: 22px 12px 12px 12px;
